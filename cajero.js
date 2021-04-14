@@ -84,12 +84,17 @@ function entregarDinero()
   { 
     for(var e of entregado) 
     { 
-      if(e.cantidad > 0) 
-      {
-                resultado.innerHTML += "<img src=" + e.imagen.src + "<br />";
-                resultado.innerHTML += "<hr />";
+      //if(e.cantidad > 0) 
+      //{
+        for(let i = 0; i < e.cantidad; i++)
+        {
+          resultado.innerHTML += "<img src=" + e.imagen.src + ">";
+          resultado.innerHTML += "<hr />";
+        }
+                //resultado.innerHTML += "<img src=" + e.imagen.src + ">";
+                //resultado.innerHTML += "<hr />";
               //resultado.innerHTML += e.cantidad + " billetes de $" + e.valor + "<br />"; 
-      } 
+      //} 
     } 
   } 
 } 
